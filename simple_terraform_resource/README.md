@@ -27,3 +27,7 @@ echo 'export PATH="/usr/bin/make:$PATH"' > ~/.bash_profile
 source ~/.bash_profile
 which make
 ```
+
+## Resources
+- [What is terraform.local.hcl](https://www.terraform.io/language/files/dependency-lock)
+- [Terraform state](https://www.terraform.io/language/state)

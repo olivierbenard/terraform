@@ -14,5 +14,6 @@ resource "local_file" "literature" {
     content = <<-EOT
     Hello World!
     This local resource will be created after terraform apply.
+    Here, I make an edit.
     EOT
 }
