@@ -10,6 +10,7 @@ terraform {
 
 resource "local_file" "literature" {
     filename = "hello_world.txt"
+    # heredoc syntax for multi-line strings
     content = <<-EOT
     Hello World!
     This local resource will be created after terraform apply.
