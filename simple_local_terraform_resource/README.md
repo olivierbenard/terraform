@@ -18,7 +18,7 @@ terraform apply
 ## Reinit the repository
 `make clean`
 
-## Troubleshooting
+## Troubleshooting Makefile
 
 ### `make` command not found
 ```
@@ -27,6 +27,10 @@ echo 'export PATH="/usr/bin/make:$PATH"' > ~/.bash_profile
 source ~/.bash_profile
 which make
 ```
+
+Additional resources:
+- https://stackoverflow.com/questions/36770716/mingw64-make-build-error-bash-make-command-not-found
+- https://stackoverflow.com/questions/16931770/makefile4-missing-separator-stop
 
 ## Resources
 - [What is terraform.local.hcl](https://www.terraform.io/language/files/dependency-lock)
