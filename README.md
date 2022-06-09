@@ -9,6 +9,7 @@ The folder `simple_local_terraform_resource` contains a minimal Terraform projec
 
 ## Local Terraform Resource with Input and Output variables
 The folder `input_n_output_variables` contains a minimal Terraform project using input and output variables to provision and read from a local Terraform `.txt` provisioned file.
+
 Based on: https://learn.hashicorp.com/collections/terraform/gcp-get-started.
 
 ## Troubleshooting Makefile
