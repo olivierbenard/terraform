@@ -13,19 +13,20 @@ terraform {
 # a module instead of repeating the expression
 locals {
   folder = "outputs"
+  environment = "${terraform.workspace}"
   required_tags = {
     project     = var.project_name,
     environment = var.environment
   }
   tags        = merge(var.resource_tags, local.required_tags) # map between the scaffolded variable and the local instanciation
-  name_prefix = "${var.project_name}-${var.environment}"
+  name_prefix = "${var.project_name}-${local.environment}"
 }
 
 
 # by default a resource block configures one real infrastructure object
 # to create multiple similar instance, use `count`
 resource "local_file" "foo" {
-  count    = 2 # meta-argument to create two similar .txt instances
+  count    = "${local.environment == "prod" ? 0 : local.environment == "staging" ? 2 : 4}" # meta-argument to create n similar .txt instances
   filename = "${local.folder}/${local.name_prefix}-foo${count.index}.txt"
   content  = "foo!"
 }
