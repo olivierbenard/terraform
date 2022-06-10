@@ -7,3 +7,8 @@ terraform {
     }
   }
 }
+
+resource "local_file" "file" {
+  filename = "file.txt"
+  content = "foo"
+}
