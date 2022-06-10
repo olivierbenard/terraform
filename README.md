@@ -23,6 +23,16 @@ Most commonly, modules use:
 
 Based on: https://www.terraform.io/language/modules/develop
 
+## Manage Complex Terraform Local Resources
+The folder `complex_local_terraform_module` contains a terraform project making use of a couple of nice tricks:
+- Using `locals` variables
+- Mapping between `locals` variables and `variables`
+- Using 3 different workspace environments: `dev`, `staging` and `prod`
+- Having dynamic part of the code managed by ternary operators
+- Using the `count` meta-argument to instanciate similar resources
+- Using `for_each` to instanciate a couple of resources sharing the same definition block
+- Defining `output` variables with `preconditions`
+
 ## Troubleshooting Makefile
 
 ### My Makefile is not working!
