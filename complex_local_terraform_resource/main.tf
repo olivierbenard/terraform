@@ -30,11 +30,9 @@ resource "local_file" "foo" {
   content  = "foo!"
 }
 
-
-# dynamic "local_file" {
-#     for_each = var.filenames
-#     content {
-#         filename = "${local.folder}/${local_file.value}.txt"
-#         content = local_file.value
-#     }
-# }
+# instanciate as many files as contain in the filenames list
+resource "local_file" "dumbfiles" {
+  for_each = toset(var.filenames)
+  filename = "${local.folder}/${each.value}.txt"
+  content  = each.value
+}

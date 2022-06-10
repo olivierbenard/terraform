@@ -16,15 +16,13 @@ output "filenames" {
   }
 }
 
-
-output "provisioned_filenames" {
-
-  value       = var.filenames
-  description = "Return the list of files actually provisioned."
+output "count_instances" {
+  value       = length(local_file.foo) + length(local_file.dumbfiles)
+  description = "Return the total number of local file instances."
+}
+# return the list of all provisioned local files
+output "provisioned_instances" {
+  value       = concat([for filename in local_file.foo : filename], [for filename in local_file.dumbfiles : filename])
+  description = "Return the list of all provisioned local files."
   sensitive   = true # TF will hide values markes as sensitive from terraform plan and apply messages
-
-  # depends_on = [
-
-  # ]
-
 }
