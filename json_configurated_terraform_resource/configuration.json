@@ -1,0 +1,34 @@
+{
+    "dev": {
+        "files" : [
+            {
+                "filename": "foo1.txt",
+                "content": "foo1"
+            },
+            {
+                "filename": "foo2.txt",
+                "content": "foo2"
+            },
+            {
+                "filename": "foo3.txt",
+                "content": "foo3"
+            }
+        ]
+    },
+    "prod": {
+        "files" : [
+            {
+                "filename": "fii1.txt",
+                "content": "fii1"
+            },
+            {
+                "filename": "fii2.txt",
+                "content": "fii2"
+            },
+            {
+                "filename": "fii3.txt",
+                "content": "fii3"
+            }
+        ]
+    }
+}

@@ -7,10 +7,3 @@ terraform {
     }
   }
 }
-
-resource "local_file" "hello_world" {
-  filename = var.filename
-  content  = <<-EOT
-    Hello World!
-    EOT
-}

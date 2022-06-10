@@ -2,8 +2,10 @@
 
 ## Pre-requisites
 - Install `tfenv` to manage terraform versions.
-- Then you need TF v.1.2.2 `tfenv install 1.2.2 && tfenv use 1.2.2`
+- Then you need TF v.1.2.2 `tfenv install 1.2.2 && tfenv use 1.2.2`.
 - Install `make` to execute Makefiles: `sudo apt-get install --reinstall make`. Refer to troubleshooting section.
+- Install `terragrunt` via `brew install terragrunt`.
+
 ## Simple Local Terraform Resource
 The folder `simple_local_terraform_resource` contains a minimal Terraform project using the `hashicorp/local` provider to provision a simple `.txt` file.
 
@@ -34,6 +36,9 @@ The folder `complex_local_terraform_module` contains a terraform project making 
 - Defining `output` variables with `preconditions`
 
 ## Troubleshooting Makefile
+
+### Having a Bash environment
+If you are on Windows, think about installing WSL Ubuntu for VSC. See: https://code.visualstudio.com/docs/remote/wsl.
 
 ### My Makefile is not working!
 I am using a W10 environment with Bash for Ubuntu for W10. Try re-installing makefile:
