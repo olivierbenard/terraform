@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 - Install `tfenv` to manage terraform versions.
-- Then you need TF v.1.2.2: `tfenv install 1.2.2 && tfenv use 1.2.2`
+- Then you need TF v.1.2.2 `tfenv install 1.2.2 && tfenv use 1.2.2`
 - Install `make` to execute Makefiles: `sudo apt-get install --reinstall make`. Refer to troubleshooting section.
 ## Simple Local Terraform Resource
 The folder `simple_local_terraform_resource` contains a minimal Terraform project using the `hashicorp/local` provider to provision a simple `.txt` file.
