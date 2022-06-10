@@ -49,5 +49,8 @@ Additional resources:
 - https://stackoverflow.com/questions/16931770/makefile4-missing-separator-stop
 
 ## Resources
-- [What is terraform.local.hcl](https://www.terraform.io/language/files/dependency-lock)
-- [Terraform state](https://www.terraform.io/language/state)
+- https://learn.hashicorp.com/tutorials/terraform/init?in=terraform/cli
+- https://learn.hashicorp.com/tutorials/terraform/resource?in=terraform/configuration-language
+- https://learn.hashicorp.com/tutorials/terraform/module?in=terraform/modules
+- https://learn.hashicorp.com/tutorials/terraform/cloud-init?in=terraform/provision
+- https://learn.hashicorp.com/tutorials/terraform/state-import?in=terraform/state
