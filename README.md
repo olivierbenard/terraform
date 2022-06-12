@@ -35,6 +35,20 @@ The folder `complex_local_terraform_module` contains a terraform project making 
 - Using `for_each` to instanciate a couple of resources sharing the same definition block
 - Defining `output` variables with `preconditions`
 
+# Read your Terraform configuration from a json file
+The folder `terraform_resource_json` contains a terraform project matching the following requirements:
+- Reading variables from `.tfvars` and `.tfvars.json` variable definition files
+- Interpolating those variables in `variables.tf`
+- Using `locals` to parametrise some of those variables e.g. `content_path`
+- Defining the file's content based on another file via the `file()` method
+- Generating several `local_file` in one block with the use of `for_each` meta-argument
+
+## Manage Terraform with Terragrunt to keep your configuration dry
+The folder `terragrunt_resources` contains a terraform project making use of `terragrunt` to keep your configuration dry.
+Thereafter, some arguments in favor of terragrunt:
+- Keep your `terraform backend` (tool allowing to share your terraform state in a shared location) dry.
+- Keep your `terraform CLI` arguments dry.
+
 ## Troubleshooting Makefile
 
 ### Having a Bash environment
