@@ -11,6 +11,7 @@ The folder `simple_local_terraform_resource` contains a minimal Terraform projec
 
 ## Local Terraform Resource with Input and Output variables
 The folder `input_n_output_variables` contains a minimal Terraform project using input and output variables to provision and read from a local Terraform `.txt` provisioned file.
+
 Based on: https://learn.hashicorp.com/collections/terraform/gcp-get-started.
 
 ## Manage Complex Configurations with Terraform Modules
@@ -36,6 +37,7 @@ The folder `complex_local_terraform_module` contains a terraform project making 
 - Defining `output` variables with `preconditions`
 
 ## Read your Terraform configuration from a json file
+
 The folder `terraform_resource_json` contains a terraform project matching the following requirements:
 - Reading variables from `.tfvars` and `.tfvars.json` variable definition files
 - Interpolating those variables in `variables.tf`
