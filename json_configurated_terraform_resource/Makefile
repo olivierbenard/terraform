@@ -12,3 +12,13 @@ deploy-prod:
 	terraform workspace select prod
 	terraform fmt
 	terraform apply --auto-approve
+
+destroy-dev:
+	terraform init
+	terraform workspace select dev
+	terraform destroy
+
+destroy-prod:
+	terraform init
+	terraform workspace select prod
+	terraform destroy

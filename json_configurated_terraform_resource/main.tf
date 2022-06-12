@@ -10,5 +10,7 @@ terraform {
 
 resource "local_file" "file" {
   filename = "file.txt"
-  content = "foo"
+  content  = <<-EOT
+  Local txt file created on the ${terraform.workspace} environement.
+  EOT
 }

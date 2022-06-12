@@ -1,1 +1,1 @@
-foo
+Local txt file created on the dev environement.
