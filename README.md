@@ -46,10 +46,15 @@ The folder `terraform_resource_json` contains a terraform project matching the f
 - Generating several `local_file` in one block with the use of `for_each` meta-argument
 
 ## Manage Terraform with Terragrunt to keep your configuration dry
-The folder `terragrunt_resources` contains a terraform project making use of `terragrunt` to keep your configuration dry.
-Thereafter, some arguments in favor of terragrunt:
-- Keep your `terraform backend` (tool allowing to share your terraform state in a shared location) dry.
-- Keep your `terraform CLI` arguments dry.
+The folder `terragrunt_resources_after` contains a terraform project making use of `terragrunt` to keep your configuration dry.
+For comparision purpose, `terragrunt_resources_before` contains the terraform project equivalent before its migration toward `terragrunt.`
+
+Terragrunt allows to:
+- keep your `terraform backend` (tool allowing to share your terraform state in a shared location) dry.
+- keep your provider configuration dry.
+- keep your `terraform CLI` arguments dry e.g. not need to specify `-var-file=params.tfvars` anymore.
+
+More here: https://terragrunt.gruntwork.io/docs/getting-started/quick-start/#keep-your-terraform-cli-arguments-dry
 
 ## Troubleshooting Makefile
 
