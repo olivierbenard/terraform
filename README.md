@@ -35,7 +35,7 @@ The folder `complex_local_terraform_module` contains a terraform project making 
 - Using `for_each` to instanciate a couple of resources sharing the same definition block
 - Defining `output` variables with `preconditions`
 
-# Read your Terraform configuration from a json file
+## Read your Terraform configuration from a json file
 The folder `terraform_resource_json` contains a terraform project matching the following requirements:
 - Reading variables from `.tfvars` and `.tfvars.json` variable definition files
 - Interpolating those variables in `variables.tf`
